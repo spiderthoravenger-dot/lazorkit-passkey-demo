@@ -19,21 +19,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-[#071025] to-black flex items-center justify-center px-4 py-8">
-      <div className="w-full max-w-md bg-white/90 rounded-2xl shadow-xl p-8">
+      <div className="w-full max-w-md bg-white/80 backdrop-blur-sm border border-white/10 rounded-2xl shadow-lg p-8">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-slate-900">Lazorkit Passkey Demo</h1>
           <p className="mt-2 text-sm text-slate-700">Passwordless sign-in for modern apps</p>
         </div>
         <div className="flex flex-col items-center space-y-6">
-          <div className="flex justify-center items-center max-h-[200px]">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-32 h-32" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+          <div className="flex justify-center items-center max-h-[200px] max-w-[220px] mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 max-w-full" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
               <path d="M10 2a4 4 0 00-4 4v1H5a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2h-1V6a4 4 0 00-4-4zM8 6a2 2 0 114 0v1H8V6z" />
             </svg>
           </div>
 
           <button
             onClick={loginWithPasskey}
-            className="mx-auto w-auto inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-white font-semibold shadow-lg transform transition hover:scale-[1.02] bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300/40"
+            className="mx-auto w-auto inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl text-white font-semibold shadow-md transform transition-all duration-200 hover:scale-105 hover:shadow-lg bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-300/60 focus-visible:ring-offset-2"
           >
             Login with Passkey
           </button>
